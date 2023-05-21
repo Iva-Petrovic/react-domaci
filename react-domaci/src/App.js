@@ -1,25 +1,38 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import {Glavna} from "./components/layout/pages/Glavna";
+import {Greska} from "./components/layout/pages/Greska";
+import {ONama} from "./components/layout/pages/ONama";
+import {Bottom} from "./components/layout/Bottom";
+import {Navbar} from "./components/layout/Navbar";
+
+import {Route, Routes} from "react-router-dom";
+
+function App(){
+
+
+    return(
+
+      <div>
+
+        <Navbar />
+
+        <Routes>
+
+          <Route path="/" element={<Glavna/>} />
+          <Route path="/onama" element={<ONama/>} />
+          <Route element={<Greska/>} />
+
+        </Routes>
+
+        <Bottom />
+
+
+      </div>
+    );
+
+
 }
 
 export default App;
