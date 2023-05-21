@@ -3,7 +3,7 @@ import './App.css';
 
 import Glavna from "./components/layout/pages/Glavna";
 import {Greska} from "./components/layout/pages/Greska";
-import {ONama} from "./components/layout/pages/ONama";
+import ONama from "./components/layout/pages/ONama";
 import {Bottom} from "./components/layout/Bottom";
 import {Navbar} from "./components/layout/Navbar";
 

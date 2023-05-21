@@ -14,7 +14,7 @@ const {
         return (
             <InfoConsumer>
                 {value => (
-                    <div className="col-10 col-lg-2 mx-3 mb-5">
+                    <div className="col-10 col-lg-3 mx-auto mb-5">
                     <div className="card" style={{ width: '14rem'}}>
                         <img src={img} alt={headerTitle} className="card-img-top"/>
                         <div className="card-body">

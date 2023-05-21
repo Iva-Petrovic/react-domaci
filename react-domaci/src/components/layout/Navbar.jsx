@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom';
 
 export function Navbar(){
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark">
+        <nav className="navbar navbar-expand-lg navbar-light">
         <div className="container-fluid">
         <Link className="navbar-brand ml-5" to="/">
-            <img src={logo} alt="logo" style={{width:'90px'}}></img>
+            <img src={logo} alt="logo" style={{width:'50px'}}></img>
         </Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span>
@@ -16,12 +16,12 @@ export function Navbar(){
         </span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul className="navbar-nav m-auto">
+        <ul className="navbar-nav ml-auto">
             <li className="nav-item">
             <Link className="nav-link active text-dark text-uppercase ml-5" aria-current="page" to="/">Početna</Link>
             </li>
             <li className="nav-item">
-            <Link className="nav-link text-dark text-uppercase ml-5" to="/kontakt">Kontaktirajte nas</Link>
+            <Link className="nav-link text-dark text-uppercase ml-5" to="/onama">Kontaktirajte nas!</Link>
             </li>
         </ul>
         </div>
